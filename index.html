@@ -4,33 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Web Studio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Web Studio 02</title>
   </head>
   <body>
     <header>
       <div class="container">
         <!--logo and navigation-->
-        <nav>
-          <a href="/">WebStudio</a>
-          <ul class="navList">
-            <li><a href="#">Студия</a></li>
-            <li><a href="./portfolio.html">Портфолио</a></li>
-            <li><a href="#">Контакты</a></li>
+        <nav class="navlink">
+          <div>
+            <a href="/" class="logo"><span class="logo-web link">Web</span>Studio</a>
+          </div>
+          <ul class="list">
+            <li><a href="./index.html" class="link current">Студия</a></li>
+            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li><a href="#" class="link">Контакты</a></li>
           </ul>
         </nav>
         <!--contacts-->
-        <ul>
+        <ul class="list contacts">
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -38,55 +40,50 @@
     <!--Main content-->
     <main>
       <!--Hero Section-->
-      <section>
+      <section class="hero">
         <div class="container">
-          <h1>
+          <h1 class="title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button">Заказать услугу</button>
+          <button type="button" class="btn">Заказать услугу</button>
         </div>
       </section>
-      <!--Our features section-->
-      <section>
+      <!--Features section-->
+      <section class="features">
         <div class="container">
-          <ul>
+          <h2 hidden>Наши качества</h2>
+          <ul class="list">
             <li>
-              <h3>Внимание к деталям</h3>
+              <h3 class="subtitle">Внимание к деталям</h3>
               <p>
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li>
-              <h3>Пунктуальность</h3>
+              <h3 class="subtitle">Пунктуальность</h3>
               <p>
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li>
-              <h3>Планирование</h3>
+              <h3 class="subtitle">Планирование</h3>
               <p>
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+                Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li>
-              <h3>Современные технологии</h3>
-              <p>
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
+              <h3 class="subtitle">Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
       </section>
-      <!--What we do-->
-      <section>
+      <!--What we do section-->
+      <section class="examples">
         <div class="container">
-          <h2>Чем мы занимаемся</h2>
-          <ul>
+          <h2 class="title">Чем мы занимаемся</h2>
+          <ul class="list">
             <li>
               <img src="./images/img1.jpg" alt="coding" width="370" />
             </li>
@@ -101,52 +98,48 @@
         </div>
       </section>
       <!--Our team section-->
-      <section>
+      <section class="team">
         <div class="container">
-          <h2>Наша команда</h2>
-          <ul>
+          <h2 class="title">Наша команда</h2>
+          <ul class="list">
             <li>
               <img src="./images/Igor.jpg" alt="Igor Demianenko" width="270" />
-              <h3>Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <h3 class="subtitle">Игорь Демьяненко</h3>
+              <p class="position">Product Designer</p>
             </li>
             <li>
               <img src="./images/Olga.jpg" alt="Olga Repina" width="270" />
-              <h3>Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <h3 class="subtitle">Ольга Репина</h3>
+              <p class="position">Frontend Developer</p>
             </li>
 
             <li>
               <img src="./images/Nick.jpg" alt="Nockolai Tarasov" width="270" />
-              <h3>Николай Тарасов</h3>
-              <p>Marketing</p>
+              <h3 class="subtitle">Николай Тарасов</h3>
+              <p class="position">Marketing</p>
             </li>
             <li>
-              <img
-                src="./images/Michael.jpg"
-                alt="Michael Iermakov"
-                width="270"
-              />
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <img src="./images/Michael.jpg" alt="Michael Iermakov" width="270" />
+              <h3 class="subtitle">Михаил Ермаков</h3>
+              <p class="position">UI Designer</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <a href="/">WebStudio</a>
-        <address>
-          <ul>
+        <a href="/" class="logo"><span class="logo-web">Web</span>Studio</a>
+        <address class="address">
+          <ul class="list">
             <li>
               <p>г. Киев, пр-т Леси Украинки, 26</p>
             </li>
             <li>
-              <a href="mailto:info@example.com">info@example.com</a>
+              <a href="mailto:info@example.com" class="link">info@example.com</a>
             </li>
             <li>
-              <a href="tel:+380991111111">+38 099 111 11 11</a>
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
