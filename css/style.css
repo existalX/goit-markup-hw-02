@@ -82,8 +82,14 @@ address {
 
 /* navigation section */
 
+/* .link-menu {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+} */
 
-.navlink .link {
+
+.list .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -98,6 +104,12 @@ address {
 
 .navlink .link.current {
   color: var(--accent-color);
+}
+
+.list .menu {
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 }
 
 /* contacts section */
